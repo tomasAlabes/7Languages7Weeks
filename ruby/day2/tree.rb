@@ -34,16 +34,15 @@ class Tree
 
 end
 
-=begin
-tree_test = Tree.new("Ruby",
+
+tree_test = Tree.new(:Ruby,
                      [Tree.new("Reia"),
                       Tree.new("MacRuby")] )
 
-tree_test2 = Tree.new({"Ruby" =>
-                           {"Reia" => {},
-                            "MacRuby" => {}}
+tree_test2 = Tree.new({:Ruby =>
+                           {:Reia => {},
+                            :MacRuby => {}}
                       })
 
 tree_test.visit_all { |node| p node.node_name }
 tree_test2.visit_all { |node| p node.node_name }
-=end
